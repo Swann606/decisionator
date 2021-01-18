@@ -1,0 +1,188 @@
+#fond {
+    background-image: url(img/background.jpg);
+    height: 100vh;
+
+}
+
+
+#content {
+    height: 80%;
+    font-family: "Lucida Console", sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+
+}
+
+#content2 {
+    display: none;
+
+}
+
+#content1 {
+    display: contents;
+}
+
+
+.imgLogo {
+    width: 100%;
+
+}
+
+
+#subtitle {
+    color: white;
+}
+
+li {
+    color: yellow;
+}
+
+.button {
+    font-family: "Lucida Console", sans-serif;
+    font-size: 1.1em;
+    padding: 0.5em;
+    background-color: transparent;
+    border-style: dashed;
+    border-color: yellow;
+    color: yellow;
+    cursor: pointer;
+}
+
+.button:hover {
+    font-family: "Lucida Console", sans-serif;
+    font-size: 1.1em;
+    padding: 0.5em;
+    background-color: yellow;
+    border-style: dashed;
+    color: black;
+    cursor: pointer;
+    border-color: black;
+    transition: 0.5s all;
+}
+
+
+#choiceBox {
+
+    width: 50%;
+    font-size: 1.2em;
+    font-family: "Lucida Console", sans-serif;
+    background-color: transparent;
+    border: solid 3px;
+    border-color: yellow;
+    color: yellow;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 25%;
+    padding: 0.5em;
+
+}
+
+
+body {
+    margin: 0;
+
+}
+
+#noteChoiceBox {
+    height: 20%;
+}
+
+.logo {
+    margin-bottom: 10%;
+}
+
+
+
+#resultBox {
+    font-family: "Lucida Console", sans-serif;
+    font-size: 1.1em;
+    padding: 0.5em;
+    background-color: transparent;
+    border-style: dashed;
+    border-color: yellow;
+    color: yellow;
+}
+
+#addCboiceBtn {
+    margin-left: 25%;
+}
+
+#noteChoiceBox{
+    margin-left: 25%;
+}
+#decisionatorBtn{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    color: white;
+}
+
+/*texte deffilant*/
+
+
+.messagedefilant {
+    display: block;
+    margin: 40px auto;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    max-width: 800px;
+    height: 2em;
+}
+
+.messagedefilant div {
+    position: absolute;
+    min-width: 100%;
+    /* au minimum la largeur du conteneur */
+}
+
+.messagedefilant div span,
+.messagedefilant div:after {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    white-space: nowrap;
+    top: 0;
+}
+
+.messagedefilant div span {
+    animation: defilement 10s infinite linear;
+    color: white;
+}
+
+.messagedefilant div:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: attr(data-text);
+    animation: defilement2 10s infinite linear;
+    color : white
+}
+
+@keyframes defilement {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+}
+
+@keyframes defilement2 {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
+}
+
+

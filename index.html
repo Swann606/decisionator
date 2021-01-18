@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>The Decisionator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body id="fond">
+    <div id="content">
+      <div id = "logo">
+        <img class="imgLogo" src="img/logodecisionateur.png" alt="" />
+      </div>
+
+      <div class="messagedefilant">
+        <div data-text="The Decisionator knows the good choice for you       ">
+          <span>The Decisionator knows the good choice for you</span>
+        </div>
+      </div>
+
+      <div id="content1">
+        <div>
+          <input
+            type="text"
+            id="choiceBox"
+            placeholder="Write the possible choices one by one"
+          /><br />
+
+          <input
+            type="button"
+            id="addCboiceBtn"
+            class="button"
+            value="Add this choice"
+          />
+          <input
+            type="button"
+            id="deleteBtn"
+            class="button"
+            value="Delete"
+          /><br />
+
+          <div id="noteChoiceBox">
+            <ol id="choiceList"></ol>
+          </div>
+          <br />
+
+          <div id="divDecisionatorButton">
+            <input
+              type="button"
+              id="decisionatorBtn"
+              class="button"
+              value="GO DECISIONATOR! HELP ME!"
+            />
+          </div><br>
+        </div>
+      </div>
+
+      <div id="content2">
+        <div id="resultBox">
+          YOU HAVE TO :
+          <span id="messageFinal"></span>
+          <div id="msgResult"></div>
+        </div>
+        <br />
+
+        <a href="index.html"
+          ><input type="button" id="okBtn" class="button" value="Thanks dude!"
+        /></a>
+
+        <input
+          type="button"
+          id="disagreeBtn"
+          class="button"
+          value="I'am not OK!"
+        />
+      </div>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+
+  </body>
+</html>
+
